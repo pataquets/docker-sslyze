@@ -1,7 +1,7 @@
 FROM python:2
 
 RUN \
-  pip install sslyze
+  pip install --no-cache-dir sslyze
 
 ENTRYPOINT [ "sslyze_cli.py" ]
 CMD [ "--help" ]
